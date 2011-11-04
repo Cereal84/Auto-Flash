@@ -1,0 +1,52 @@
+# AUTHOR: Cereal
+# DATA:   04-11-2011
+
+# DISCLAIMER : I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR PHONE AND DO AT YOUR OWN RISK 
+
+# DESCRIPTION
+#
+# This script is used to flash automatically the stock rom on Android's smartphone and/or the 
+# ClockWorkMod using Heimdall software in Linux OS.
+# 
+# The script check if Heimdall software is installed and after that check if the device is detected, if isn't the
+# script exit because it can't flash the device.
+# If everything is ok the script checks if there are the necessary files.
+# About stock rom you need :
+#
+#	PIT File
+#	boot.bin	<- Primary Boot
+#	Sbl.bin		<- Secondary Boot
+#	normalboot.img	<- Normal Boot
+#	cache.rfs	<- Cache
+#	modem.bin	<- Modem
+#	param.lfs	<- Param
+#	system.rfs	<- System
+#
+# About ClockWorkMod you need :
+#
+#	normalboot.img 	<- Normal Boot
+#	param.lfs	<- Param
+
+# IMPORTANT
+# This script it was tested only on Samsung I9003 and stock roms XXKE and XXKM and the ClockWorkMod for XXKPM ( Skin1980 ).
+
+# USAGE
+#
+# Give the execute permission typing :
+#
+#	chmod +x auto_flash.sh
+#
+# Extract the files from the archive/s in order to have all the files in the same directory.
+#
+# Type the following command :
+#
+# 	sh auto_flash.sh <directory>
+#
+# The <directory> will be that one that contains the files wrote upper. If the files and the script are 
+# both in the same directory leave this parameter blank. So type :
+#
+# 	sh auto_flash.sh
+#
+# After that you see the menu where you can choose to flash a stock rom or the clockworkmod.
+# For some stock rom it is requested to repartition so after all checks you'll be asked if to repartition
+# if you want to.
